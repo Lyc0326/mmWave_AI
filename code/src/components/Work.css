@@ -1,0 +1,22 @@
+/* Work.css */
+.work-container {
+    padding: 20px;
+    margin: 50px auto; /* Adds space at the top and bottom */
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.work-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.work-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}

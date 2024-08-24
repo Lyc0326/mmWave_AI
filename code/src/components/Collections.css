@@ -1,0 +1,122 @@
+/* src/components/Collections.css */
+.collections {
+    padding: 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 35px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-input-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    position: relative;
+    border: 1.5px solid #ddd;
+    border-radius: 2px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.search-input-container:focus-within {
+    border-color: #333;
+    font-weight: bold;
+}
+
+.search-label,
+.search-input {
+    padding: 10px;
+    font-size: 15px;
+    color: #333;
+    margin: 0;
+}
+
+.search-label {
+    font-weight: bold;
+    background-color: #fff;
+    border-right: 1.5px solid #ddd;
+    white-space: nowrap;
+}
+
+.search-input {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.search-input::placeholder {
+    color: #aaa;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
+
+.search-icon:hover {
+    color: #666666bb; /* Slightly lighter color when hovered */
+}
+
+.works {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding: 0 5px;
+}
+
+.work-item {
+    flex: 1;
+    text-align: center;
+}
+
+.work-box {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.work-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.description {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px;
+}
+
+.description p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.description p:first-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+}

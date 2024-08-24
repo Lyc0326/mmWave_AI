@@ -1,0 +1,87 @@
+/* src/components/Footer.css */
+footer {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    gap: 50px; /* 調整間距來縮小圖標之間的距離 */
+}
+
+.footer-icon {
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    text-decoration: none; /* 移除底線 */
+    padding: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* 過渡效果 */
+}
+
+.footer-icon img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease; /* 過渡效果 */
+}
+
+.footer-icon:hover {
+    transform: scale(1.1);
+}
+
+.footer-icon:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.newsletter-input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.newsletter-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-info {
+    text-align: center;
+    font-size: 12px;
+    color: #000;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #888888;
+}
+
+.footer-contact {
+    margin-bottom: 20px;
+}

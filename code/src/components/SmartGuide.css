@@ -1,0 +1,167 @@
+.smart-guide-container {
+    padding: 30px;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #f0f0f0; /* 調整背景顏色 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 添加過渡效果 */
+}
+
+.smart-guide-container:hover {
+    /* transform: translateY(-5px); 當容器被懸停時稍微移動 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 增加陰影效果 */
+}
+
+.smart-guide-title {
+    font-size: 2.5rem; /* 增大標題字體大小 */
+    color: #e35700; /* 調整顏色 */
+    margin-bottom: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* 添加淡入動畫 */
+}
+
+
+.sensor-data {
+    background-color: #f0f0f0; /* 為感測器數據部分設置背景色 */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    /* box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); */
+}
+
+.sensor-data p {
+    font-size: 1.2rem; /* 稍微增大字體 */
+    color: #333; /* 調整文字顏色 */
+    margin-bottom: 10px;
+    font-weight: bold; /* 字體加粗 */
+}
+
+pre {
+    background-color: #e0e0e0; /* 設置預格式化文本背景色 */
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem; /* 設置字體大小 */
+    color: #444; /* 調整文字顏色 */
+    line-height: 1.5; /* 調整行距 */
+    overflow-x: auto; /* 允許水平滾動 */
+}
+
+.smart-guide-description {
+    font-size: 1.2rem; /* 稍微增大描述字體 */
+    color: #444; /* 文字顏色稍微變深 */
+    line-height: 1.6; /* 調整行距以增強可讀性 */
+    margin-bottom: 25px;
+    text-align: justify; /* 調整文本為兩端對齊 */
+}
+
+.smart-guide-content {
+    font-size: 1.1rem; /* 增大內容字體 */
+    color: #555;
+}
+
+.smart-guide-content ul {
+    list-style-type: circle; /* 更改列表符號為圓圈 */
+    margin-left: 25px; /* 增加列表的縮進 */
+}
+
+.smart-guide-content li {
+    margin-bottom: 12px; /* 增加列表項之間的距離 */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* 確保彈出視窗在最上層 */
+    width: 300px; /* 固定寬度，根據需要調整 */
+    text-align: center;
+}
+
+.dialog-content p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.dialog-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dialog-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dialog-button.cancel {
+    background-color: #ff7070;
+    color: white;
+}
+
+.dialog-button.cancel:hover {
+    background-color: #fc5050;
+}
+
+.dialog-button.enter {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.dialog-button.enter:hover {
+    background-color: #008d10;
+}
+
+.loading {
+    font-size: 1.3rem;
+    color: #333; /* 設置為#333顏色 */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.loading::after {
+    content: '.';
+    animation: dots 1s steps(3, end) infinite;
+}
+
+@keyframes dots {
+    0%, 20% {
+        color: rgba(0, 0, 0, 0); /* 隱藏所有點 */
+    }
+    40% {
+        color: #333; /* 顯示第一個點 */
+        text-shadow:
+            .25em 0 0 rgba(0, 0, 0, 0),
+            .5em 0 0 rgba(0, 0, 0, 0);
+    }
+    60% {
+        text-shadow:
+            .25em 0 0 #333, /* 顯示前兩個點 */
+            .5em 0 0 rgba(0, 0, 0, 0);
+    }
+    80% {
+        text-shadow:
+            .25em 0 0 #333, /* 顯示所有三個點 */
+            .5em 0 0 #333;
+    }
+    100% {
+        color: rgba(0, 0, 0, 0); /* 再次隱藏所有點 */
+        text-shadow:
+            .25em 0 0 rgba(0, 0, 0, 0),
+            .5em 0 0 rgba(0, 0, 0, 0);
+    }
+}

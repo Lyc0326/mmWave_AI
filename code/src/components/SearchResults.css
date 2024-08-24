@@ -1,0 +1,31 @@
+/* SearchResults.css */
+.search-results-container {
+    padding: 20px;
+    margin: 50px auto; /* Adds space at the top and bottom */
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.search-results-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-results-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    text-align: center;
+}
+
+.no-results-message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #888;
+    text-align: center;
+}
